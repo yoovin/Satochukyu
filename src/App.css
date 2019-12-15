@@ -1,38 +1,69 @@
-.App {
+body{
+  height: 100%;
+  width: 100%;
+  /* text-align: center; */
+  /* padding-bottom: 10px; */
+}
+
+.out{
+  width: 100%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.in{
+  margin:5%;
+  display: inline-block;
+  padding:30px;
+  border:5px solid gray;
+  border-radius: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.adin{
+  margin:5%;
+  display: inline-block;
+  padding:50px;
+  border:5px solid gray;
+  border-radius: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.adanswer{
+  font-size: 50px;
+  font-weight: bold;
+  color:#8dcc79;
 }
 
-.App-link {
-  color: #61dafb;
+.addot{
+  font-size: 50px;
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.title{
+  font-weight: bold;
+}
+
+.name{
+  color:#626161;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.answer{
+  font-size: 20px;
+  font-weight: bold;
+  color:#999999;
+}
+
+.mondai{
+  font-weight: bold;
+  color:#404040;
+  font-size:20px;
+}
+
+.monanswer{
+  font-weight: bold;
+  font-size: 30px;
+}
+.monlongans{
+  font-weight: bold;
+  font-size: 20px;
 }
