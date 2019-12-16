@@ -57,7 +57,7 @@ export default class Kakunin extends Component {
                 alert("확인되었습니다.")
             })
             await window.sessionStorage.clear()
-            await this.props.history.push('/')
+            await this.props.history.push('/admin')
         }else{
             console.log("취소")
         }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import {Alert} from 'react-bootstrap'
+import {Animated} from "react-animated-css"
 
 export default class Admin extends Component {
 
@@ -18,8 +19,6 @@ export default class Admin extends Component {
             this.setState({answer:aanswer})
         })
         .catch(err=>console.log(err))
-
-        
     }
 
     render() {
@@ -30,6 +29,7 @@ export default class Admin extends Component {
                 <Alert variant="success">
                     정답수 확인!
                 </Alert>
+                <Animated animationIn="lightSpeedIn" animationOut="zoomOutDown" animationInDuration={1000} animationOutDuration={1000} isVisible={true}>
                 {answer ? answer.map(data => {
                     return(
                         <div>
@@ -39,6 +39,7 @@ export default class Admin extends Component {
                         </div>
                     )
                 }) :''}
+                </Animated>
                 </div>
             </div>
         )
